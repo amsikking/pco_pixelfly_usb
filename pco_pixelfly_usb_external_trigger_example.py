@@ -31,7 +31,7 @@ images = np.zeros( # allocate memory to pass in
 for i in range(2):
     ao.play_voltages(block=False) # race condition!
     camera.record_to_memory( # -> waits for trigger
-        allocated_memory=images, software_trigger=False, re_arm=True)
+        allocated_memory=images, software_trigger=False)
 imwrite('test_external_trigger.tif', images, imagej=True)
 
 time_s = ao.p2s(voltages.shape[0])
