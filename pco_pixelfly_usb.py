@@ -28,7 +28,7 @@ class Camera:
             print("%s: - is CamWare running? (close it)"%self.name)
             raise
         wSZCameraNameLen = 40
-        camera_name = C.c_char_p(wSZCameraNameLen * b'')
+        camera_name = C.c_char_p(wSZCameraNameLen * b' ')
         dll.get_camera_name(self.handle, camera_name, wSZCameraNameLen)
         assert camera_name.value == b'pco.pixelfly USB'
         self._num_buffers = 16 # default to maximum
