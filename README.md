@@ -4,6 +4,9 @@ Python device adaptor: PCO.pixelfly USB CCD camera (mono and color).
 - Install the PCO USB interface driver, then install 'Camware' to test the camera and get the latest
  "SC2_Cam.dll" (a version included here). Put the .dll in the directory with "pco_pixelfly_usb.py" and
  run the script (requires Python and numpy).
+
+![social_preview](https://github.com/amsikking/pco_pixelfly_usb/blob/main/social_preview.png)
+
 ## Details:
 - The adaptor reveals a minimal API from the extensive PCO SDK by following the 'typical implementation'
 for a series of .dll calls for camera setup, image acquisition and tidy up.
